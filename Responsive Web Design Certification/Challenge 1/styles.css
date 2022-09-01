@@ -1,0 +1,84 @@
+body {
+    /*width: 100%;
+    height: 100vh;*/
+    margin: 0;
+    background: linear-gradient(rgb(0, 127, 255), rgb(127, 127, 255));
+    color: #f5f6f7;
+    font-family: Montserrat, sans-serif;
+    font-size: 1rem;
+}
+  
+.text-center {
+    margin: 1em auto;
+    text-align: center;
+}
+  
+form {
+    width: 80%;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2em ;
+    background: linear-gradient(#1b1b32aa, #000000a1);
+    border-radius: 10px;
+}
+  
+fieldset {
+    border: none;
+    padding: 0;
+    margin: 0 auto;
+}
+  
+label {
+    display: block;
+    margin: 0.5rem 0;
+}
+  
+input,
+textarea,
+select {
+    margin: 10px 0 0 0;
+    width: 100%;
+}
+
+input, select {
+    height: 24px;
+}
+
+textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+  
+.inline {
+    width: unset;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+#submit {
+    background-color: #37af65;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    padding: 20px;
+    cursor: pointer;
+    
+}
+
+footer {
+    background-color: #000000a2;
+    height: 100px;
+    top: 10px;
+    text-align: center;
+    margin-top: 24px;
+    padding: 1rem;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}

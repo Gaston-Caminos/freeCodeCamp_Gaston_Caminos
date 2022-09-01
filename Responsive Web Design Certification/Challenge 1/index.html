@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title>Survey Form</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <header>
+        <h1 id="title" class="text-center">freeCodeCamp Survey Form</h1>
+        <p id="description" class="text-center"><em>Thank you for taking the time to help us improve the platform</em></p>
+      </header>
+
+    <div class="form">
+    <section>
+      <form id="survey-form">
+        <fieldset>
+          <label id="name-label">Name<input type="text" id="name" placeholder="Enter your name" required /></label>
+          <label id="email-label">Email<input type="email" id="email" placeholder="Enter your Email" required /></label>
+          <label id="number-label">Age<input type="number" id="number" min="10" max="120" placeholder="Age"/></label>
+        </fieldset>
+      
+        <fieldset>
+          <p>Which option best describes your current role?</p>
+            <select id="dropdown">
+              <option>Select current role</option>
+              <option>Student</option>
+              <option>Full time Job</option>
+              <option>Full time Learner</option>
+              <option>Prefer not to say</option>
+              <option>Other</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+          <p>Would you recommend freeCodeCamp to a friend?</p>
+            <label><input type="radio" name="recommend" value="definitely" class="inline"/>Definitely</label>
+            <label><input type="radio" name="recommend" value="maybe" class="inline"/>Maybe</label>
+            <label><input type="radio" name="recommend" value="not-sure" class="inline"/>Not sure</label>
+        </fieldset>
+
+        <fieldset>
+          <p>What would you like to see improved? (Check all that apply)</p>
+            <label><input type="checkbox" value="Front-end-Projects" class="inline">Front-end Projects</label>
+            <label><input type="checkbox" value="Back-end-Projects" class="inline">Back-end Projects</label>
+            <label><input type="checkbox" value="Data-Visualization" class="inline">Data Visualization</label>
+            <label><input type="checkbox" value="Challenges" class="inline">Challenges</label>
+            <label><input type="checkbox" value="Open-Source-Community" class="inline">Open Source Community</label>
+            <label><input type="checkbox" value="Gitter-help-rooms" class="inline">Gitter help rooms</label>
+            <label><input type="checkbox" value="Videos" class="inline">Videos</label>
+            <label><input type="checkbox" value="City-Meetups" class="inline">City Meetups</label>
+            <label><input type="checkbox" value="Wiki" class="inline">Wiki</label>
+            <label><input type="checkbox" value="Forum" class="inline">Forum</label>
+            <label><input type="checkbox" value="Additional-Courses" class="inline">Additional Courses</label>
+        </fieldset>
+
+        <fieldset>
+          <p>Any comments or suggestions?</p>
+            <textarea></textarea>
+        </fieldset>
+
+        <fieldset>
+            <input type="submit" id="submit" value="Submit">
+        </fieldset>
+      </form>
+    </section>
+  </div>
+
+    <footer>
+        <p>Created by Gastón Caminos</p>
+        <p><a href="mailto:gastoncaminos98@gmail.com">gastoncaminos98@gmail.com</a></p>
+    </footer>
+  </body>
+
+<html>

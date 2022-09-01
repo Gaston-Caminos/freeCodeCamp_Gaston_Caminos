@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --mainRed: #be3144;
+    --mainBlue: #45567d;
+    --mainWhite: #f0f0f0;
+    --mainGray: #303841;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #fff;
+    text-align: center;
+}
+
+#navbar {
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    width: 100%;
+    background-color: var(--mainRed);
+    top: 0;
+    left: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+.nav_list {
+    display: flex;
+    margin-right: 2rem;
+}
+
+.nav_list a {
+    padding: 2rem;
+}
+
+li {
+    display: list-item;
+    transition: background 0.3s ease-out; 
+}
+
+li:hover {
+    background: var(--mainBlue);
+}
+
+#welcome-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    background-image: linear-gradient(66deg, #3a3d40 0%, #181719 100%);
+}
+
+#welcome-section  p {
+    font-size: 2rem;
+    font-weight: normal;
+    font-style: italic;
+    color: var(--mainRed);
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+/********************* PROJECTS ***************************/
+
+h2 {
+    font-size: 2.5rem;
+}
+
+#projects {
+    background-color: var(--mainBlue);
+    padding: 10rem 2rem
+}
+
+.projects_header {
+    border-bottom: 2px solid var(--mainWhite);
+    max-width: 600px;
+    margin: 0 auto 4rem auto;
+}
+
+.projects_grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 2rem;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+}
+
+.project {
+    background: var(--mainGray);
+    box-shadow: 1px 1px 2px rgb(0 0 0 / 50%);
+    border-radius: 2px;
+}
+
+.project-image {
+    height: calc(100% - 6rem);
+    width: 100%;
+    object-fit: cover;
+}
+
+a {
+    text-decoration: none;
+    color: var(--mainWhite);
+}
+
+.code {
+    display: none;
+}
+
+.btn-show-all {
+    font-size: 1rem;
+    background: var(--mainGray);
+    border-radius: 10px;
+    transition: background 0.3s ease-out;  
+}
+
+.btn-show-all:hover {
+    background: var(--mainRed);
+}
+
+
+.btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    border-radius: 2px;
+}
+
+/******************************* CONTACT SECTION ************************************/
+
+.contact_section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80vh;
+    padding: 0 2rem;
+    background: var(--mainGray);
+}
+
+.contact_section h2 {
+    font-size: 4rem;
+}
+
+.contact_section p {
+    font-style: italic;
+    font-size: 1rem;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 980px;
+    margin-top: 4rem;
+    flex-wrap: wrap;
+}
+
+.contact-details {
+    font-size: 1.5rem;
+    text-shadow: 2px 2px 1px #1f1f1f;
+    transition: transform 0.3s ease-out;
+}
+
+.contact-details:hover {
+    transform: translateY(10px); 
+}
